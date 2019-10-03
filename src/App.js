@@ -1,13 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import FlightsList from './components/FlightsList';
-
+import FlightDashboard from "./components/FlightDashboard";
 
 function App() {
   return (
-    <div className="App">
-      <FlightsList />
+    <div className="container">
+      <FlightDashboard />
     </div>
   );
 }
