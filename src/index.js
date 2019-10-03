@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ApolloProvider } from "react-apollo";
-import client from "./utils/graphQL";
+import client from "./graphQL/client";
 
 ReactDOM.render(<ApolloProvider client={client}>
     <App />

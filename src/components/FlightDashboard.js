@@ -50,6 +50,8 @@ export default class FlightDashboard extends React.PureComponent {
             <TextInput label='Destination City:' id='cityTo' onChange={this.onChangeHandler} />
             <br />
             <button type="button" onClick={this.onSubmit} disabled={!(this.state.cityFrom && this.state.cityTo)} className="btn btn-primary">Search</button>
+            <br />
+            <br />
             {(this.state.cityFrom && this.state.cityTo) && <FilterBy onClick={this.onFilterByHandler} />}
             <h2>Available Flights:</h2>
             <FlightsList filterBy={this.state.filterBy} cityFrom={this.state.cityFrom} cityTo={this.state.cityTo} skip={this.state.skip} />
